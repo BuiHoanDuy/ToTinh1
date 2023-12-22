@@ -1,0 +1,122 @@
+body{
+    background-image: url('img/heart_bkg.avif');
+}
+my_page{
+    position: relative;
+}
+.ruler{
+    float: left;
+}
+.love_measure{
+    scale: 0.5;
+    position: absolute;
+    text-align: center;
+    margin-top: 510px;
+    margin-left: 270px;
+}
+.measure{
+    width: 50px;
+    height: 70px;
+    background-color: #FFC5E6;
+    margin-left: 370px;
+    margin-top: -150px;
+    border: 5px #FFD273 solid;
+    border-radius: 20px;
+}
+#image-container{
+    scale: 0.5;
+    margin-left: 1000px;
+    overflow: hidden;
+}
+#displayed-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+#questions-container {
+    max-width:fit-content;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    scale: 1.5;
+  }
+  
+  #question-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .question {
+    display: none;
+  }
+  
+  #next-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #C7D7FB;
+    color: #956AD6;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 50px;
+  }
+  #khong{
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #FAAA8D;
+    color: #956AD6;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .main{
+    margin: -400px 600px;
+  }
+
+  body {
+    overflow: hidden;
+  }
+  .confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    margin-top: -800px;
+  }
+  
+  .heart {
+    width: 24px;
+    height: 24px;
+    background-color: #e74c3c;
+    position: absolute;
+    transform: rotate(-45deg);
+    animation: float 4s linear infinite;
+    box-shadow: 0 8px 16px rgba(231, 76, 60, 0.2);
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) rotate(-45deg);
+      opacity: 1;
+    }
+
+    50% {
+      transform: translateY(-100px) rotate(-45deg);
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(100vh) rotate(-45deg);
+      opacity: 0;
+    }
+  }
